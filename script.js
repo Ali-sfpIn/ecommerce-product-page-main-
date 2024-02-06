@@ -90,8 +90,7 @@ mainImg.addEventListener("click", function () {
   if (document.body.clientWidth < 768) return;
   imgPathManager(lightBoxImg, mainImg.src.slice(43, 44));
   shower(lightBox);
-  thumbnailNum = this.src.slice(43, 44);
-  console.log(mainImg.src, thumbnailNum);
+  thumbnailNum = this.src.slice(78, 79);
   thumbActiveManager(
     document.querySelector(`[data-number="${thumbnailNum}"]`),
     "modal-thumbnail"
