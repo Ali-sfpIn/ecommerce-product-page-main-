@@ -91,11 +91,11 @@ mainImg.addEventListener("click", function () {
   imgPathManager(lightBoxImg, mainImg.src.slice(43, 44));
   shower(lightBox);
   thumbnailNum = this.src.slice(43, 44);
+  console.log(mainImg.src, thumbnailNum);
   thumbActiveManager(
     document.querySelector(`[data-number="${thumbnailNum}"]`),
     "modal-thumbnail"
   );
-  console.log(mainImg.src);
   shower(overlay);
 });
 
@@ -128,7 +128,6 @@ chevronContainer.addEventListener("click", function (e) {
   imgPathManager(lightBoxImg, thumbnailNum);
   const targetThumb = document.querySelector(`[data-number="${thumbnailNum}"]`);
   thumbActiveManager(targetThumb, "modal-thumbnail");
-  console.log(thumbnailNum);
 });
 
 addToCartBtn.addEventListener("click", function () {
