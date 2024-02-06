@@ -95,6 +95,7 @@ mainImg.addEventListener("click", function () {
     document.querySelector(`[data-number="${thumbnailNum}"]`),
     "modal-thumbnail"
   );
+  console.log(mainImg.src);
   shower(overlay);
 });
 
