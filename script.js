@@ -88,10 +88,9 @@ thumbnailContainer.addEventListener("click", thumbHandler);
 // if click happens on main image of the page=> show light box
 mainImg.addEventListener("click", function () {
   if (document.body.clientWidth < 768) return;
-  imgPathManager(lightBoxImg, mainImg.src.slice(43, 44));
+  imgPathManager(lightBoxImg, mainImg.src.slice(78, 79));
   shower(lightBox);
   thumbnailNum = this.src.slice(78, 79);
-  console.log(mainImg.src, thumbnailNum);
   thumbActiveManager(
     document.querySelector(`[data-number="${thumbnailNum}"]`),
     "modal-thumbnail"
